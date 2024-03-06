@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    h1, h2, h3, h4, h5, h6{
+        @apply font-bold;
+    }
+
+    input, textarea{
+        @apply bg-color-background border-gray-color;
+    };
+}
+
+@layer components{
+    .icons-container{
+       @apply p-4 w-max aspect-square bg-card-color rounded-full;
+    }
+
+    .icons{
+        @apply fill-green-color w-10;
+    }
+
+    .focus-input{
+       @apply outline-none focus:ring-1 focus:ring-green-color focus:ring-inset transition;
+    }
+
+    .hover-nav{
+        @apply border-b-2 border-b-white
+    }
+
+    .hover-services{
+        @apply border-b-2 border-b-green-color
+    }
+}
+
+
+/* para crear una clase de utilidad extra para tailwind*/
+@layer utilities{
+    .scroll-bar-style{
+        scrollbar-color: gray #171717;
+        scrollbar-width: thin;
+    }
+    .wrapper{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        max-width: 1280px;
+        overflow: hidden;
+    }
+    
+    .clip-circle-0{
+        clip-path: circle(0% at top right);
+    }
+    .clip-circle-full{
+        clip-path: circle(150% at top right);
+    }
+
+    .hover-btn-primary{
+        /* --tw-bg- */
+        background-color: rgba(128, 43, 177, 0.801)
+    }
+    .hover-btn-secondary{
+        background-color: white;
+        color:black;
+        border-color:black
+    }
+
+    .hover-social-icons{
+        box-shadow: 0 0 5px 5px #802bb1;
+      
+    }
+
+    .hover-box-shadow-services{
+        box-shadow: 0px 15px 10px -7px #802bb1
+    }
+
+
+    .hover-na-old{
+
+        /* background: linear-gradient(128.87deg,#e666cc 14.05%,#fa97a1 89.3%); */
+        /* background: linear-gradient(128.87deg,#802bb1 14.05%,#53ceda 89.3%); */
+        /* background-clip: text;
+        -webkit-text-fill-color: transparent; */
+
+
+    }
+
+
+}
+
