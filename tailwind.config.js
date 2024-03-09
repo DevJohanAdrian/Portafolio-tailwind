@@ -1,11 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
-  // content:["*"],
-  //content: [
-  //   "./index.html",
-  //   "./src/**/*.{js,ts,jsx,tsx}",
-  // ],
+  content: ["./src/**/*.{html,js}",
+  './index.html'],
+
   theme: {
     extend: { //se agregan fuentes y colores no existentes
       fontFamily:{

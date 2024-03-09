@@ -32,6 +32,10 @@
     .hover-services{
         @apply border-b-2 border-b-green-color
     }
+
+    .badge-color{
+         @apply  bg-purple-800/30 text-purple-500
+    }
 }
 
 
@@ -71,8 +75,15 @@
       
     }
 
+    
+    .hover-skill-icons{
+        box-shadow: 0 0 5px 5px #802bb1;
+      
+    }
+
     .hover-box-shadow-services{
-        box-shadow: 0px 15px 10px -7px #802bb1
+        box-shadow: 0px 15px 10px -7px #802bb1;
+        cursor: pointer;
     }
 
 
